@@ -12,7 +12,7 @@ const Chart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/chart-data');
+        const response = await axios.get('https://assignment-living-things-1.onrender.com/api/chart-data');
         setChartData(response.data);
         setIsLoading(false);
       } catch (error) {
